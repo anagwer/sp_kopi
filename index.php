@@ -65,7 +65,7 @@
 <!-- Hero Section -->
 <section class="hero mt-4">
     <i class="fas fa-mug-hot mb-3"></i>
-    <h1>Sistem Pakar Mendiagnosis Penyakit Tanaman Kopi Arabika</h1>
+    <h1>Sistem Pakar Mendiagnosis Penyakit Tanaman Kopi</h1>
     <p class="mt-3">Membantu petani Kopi dalam mendiagnosis penyakit tanaman kopi secara cepat dan akurat.</p>
 </section>
 
