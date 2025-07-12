@@ -35,6 +35,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
                 <li class="nav-item">
                     <a class="nav-link <?= ($current_page == 'diagnosa.php') ? 'active' : '' ?>" href="diagnosa.php"><i class="fas fa-diagnoses me-1"></i>Diagnosa</a>
                 </li>
+
+                <!-- Riwayat -->
+                <li class="nav-item">
+                    <a class="nav-link <?= ($current_page == 'riwayat.php') ? 'active' : '' ?>" href="riwayat.php"><i class="fas fa-history me-1"></i>Riwayat</a>
+                </li>
             </ul>
         </div>
     </div>

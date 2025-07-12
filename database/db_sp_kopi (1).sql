@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 30, 2025 at 04:54 PM
+-- Generation Time: Jul 12, 2025 at 05:25 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -20,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_sp_kopi`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `diagnosa`
+--
+
+CREATE TABLE `diagnosa` (
+  `id_diagnosa` int(11) NOT NULL,
+  `nama_pengguna` varchar(255) NOT NULL,
+  `id_penyakit` int(11) DEFAULT NULL,
+  `tanggal_diagnosa` datetime DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `diagnosa`
+--
+
+INSERT INTO `diagnosa` (`id_diagnosa`, `nama_pengguna`, `id_penyakit`, `tanggal_diagnosa`) VALUES
+(1, 'anon', 1, '2025-07-12 22:17:51');
 
 -- --------------------------------------------------------
 
@@ -123,6 +143,13 @@ INSERT INTO `rule` (`id_rule`, `id_penyakit`, `id_gejala`) VALUES
 --
 
 --
+-- Indexes for table `diagnosa`
+--
+ALTER TABLE `diagnosa`
+  ADD PRIMARY KEY (`id_diagnosa`),
+  ADD KEY `id_penyakit` (`id_penyakit`);
+
+--
 -- Indexes for table `gejala`
 --
 ALTER TABLE `gejala`
@@ -147,6 +174,12 @@ ALTER TABLE `rule`
 --
 
 --
+-- AUTO_INCREMENT for table `diagnosa`
+--
+ALTER TABLE `diagnosa`
+  MODIFY `id_diagnosa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `gejala`
 --
 ALTER TABLE `gejala`
@@ -167,6 +200,12 @@ ALTER TABLE `rule`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `diagnosa`
+--
+ALTER TABLE `diagnosa`
+  ADD CONSTRAINT `diagnosa_ibfk_1` FOREIGN KEY (`id_penyakit`) REFERENCES `penyakit` (`id_penyakit`);
 
 --
 -- Constraints for table `rule`
