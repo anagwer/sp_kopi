@@ -68,6 +68,15 @@
     <h1>Sistem Pakar Mendiagnosis Penyakit Tanaman Kopi</h1>
     <p class="mt-3">Membantu petani Kopi dalam mendiagnosis penyakit tanaman kopi secara cepat dan akurat.</p>
 </section>
+<!-- Filosofi Kopi -->
+<section class="container mt-5">
+    <div class="feature-box">
+        <h4 class="text-center mb-3">Filosofi Kopi</h4>
+        <p class="text-center">
+            Kopi bukan sekadar minuman, tetapi cerminan kehidupan: pahit namun menenangkan, sederhana namun penuh makna. Dalam setiap tegukan, tersimpan kerja keras petani, hangatnya kebersamaan, dan semangat pantang menyerah. Seperti halnya proses dalam sistem pakar ini, setiap gejala yang dianalisis mengandung cerita yang menuntun pada penyembuhan karena merawat tanaman kopi, adalah juga merawat harapan.
+        </p>
+    </div>
+</section>
 
 <!-- Fitur Utama -->
 <div class="container mt-5">
